@@ -68,5 +68,5 @@ vendor
 ### Application Data ###
 build
 temp
-#theme
+theme
 .env
