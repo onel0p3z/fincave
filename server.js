@@ -7,18 +7,20 @@
 
     var options = {
         views: {
+            path: path.join(__dirname,  'templates'),
             engines: {
                 html: require('swig')
-            },
-            path: path.join(__dirname,  '/templates')
+            }
         }
     };
 
+
     var server = module.exports = new Hapi.Server(
         process.env.HOST || 'localhost',
-        process.env.PORT || '8080',
-        options || {}
+        process.env.PORT || '8080'
     );
+
+    server.views(options.views);
 
     var mongodb_config = {
         plugin: require('hapi-mongodb'),
@@ -33,17 +35,25 @@
     };
 
     var good_config = {
-        subscribers: {
-            console: ['ops', 'request', 'log', 'error']
+        plugins: require('good'),
+        options : {
+            subscribers: {
+                console: ['ops', 'request', 'log', 'error']
+            }
         }
     };
 
-    server.pack.register([
-        mongodb_config,
-        good_config
-        ], function (err) {
+    server.pack.register(
+        mongodb_config
+        , function (err) {
             if (err) { throw new Error(err); }
     });
+
+/*
+    server.pack.register(good_config, function (err) {
+        if (err) { throw new Error(err); }
+    });
+*/
 
     server.route(routes);
 
