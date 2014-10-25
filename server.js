@@ -3,15 +3,19 @@
 (function () {
     var Hapi = require('hapi');
     var routes = require('./routes/');
-    var path = require('path');
+
     var options = {
-        files: {
-            relativeTo: path.join(__dirname, 'public')
+        views: {
+            engines: { jade: require('jade') },
+            path: __dirname + '/templates',
+            compileOptions: {
+                pretty: true
+            }
         }
     };
 
     var server = module.exports = new Hapi.Server(
-        process.env.HOST,
+        process.env.HOST || 'localhost',
         process.env.PORT || '8080',
         options || {}
     );
