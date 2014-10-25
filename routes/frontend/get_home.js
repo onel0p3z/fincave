@@ -2,7 +2,9 @@
 (function() {
 
     function getHomeHandler (request, reply) {
-        reply('You get at our Home.');
+        reply.view('home', {
+            title: 'Home'
+        });
     }
 
     module.exports = {
