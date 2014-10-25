@@ -1,0 +1,38 @@
+{
+  "name": "fincave",
+  "version": "0.0.1",
+  "description": "App created for the FinTank Hackathon",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onel0p3z/fincave.git"
+  },
+  "keywords": [
+    "FinTank",
+    "Hackathon",
+    "Miami",
+    "Miami",
+    "Dolphins",
+    "Fins",
+    "Dolphins",
+    "NFL",
+    "Champs",
+    ":D",
+    "Fin<3"
+  ],
+  "authors": ["onel0p3z <onel0p3z@gmail.com>", "angel_cuemby <angel@cuemby.com>"],
+  "license": "No License",
+  "bugs": {
+    "url": "https://github.com/onel0p3z/fincave/issues"
+  },
+  "homepage": "https://github.com/onel0p3z/fincave",
+  "dependencies": {
+    "forever": "^0.11.1",
+    "good": "^2.4.2",
+    "hapi": "^7.1.1",
+    "joi": "^4.7.0"
+  }
+}
