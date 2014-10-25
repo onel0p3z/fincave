@@ -3,14 +3,12 @@
 (function () {
     var Hapi = require('hapi');
     var routes = require('./routes/');
-    var config = require('./common/config');
 
-    config.startEnvironment();
 
     var server = module.exports = new Hapi.Server(
-        process.env.API_HOST,
-        process.env.API_PORT,
-        config.server
+        process.env.HOST,
+        process.env.PORT,
+        process.env.APP_OPTS || {}
     );
 
     server.pack.register(require('good'), function (err) {
