@@ -3,10 +3,14 @@
 (function () {
     var Hapi = require('hapi');
     var routes = require('./routes/');
-    var path = require('path');
+
     var options = {
-        files: {
-            relativeTo: path.join(__dirname, 'public')
+        views: {
+            engines: { jade: require('jade') },
+            path: __dirname + '/templates',
+            compileOptions: {
+                pretty: true
+            }
         }
     };
 
