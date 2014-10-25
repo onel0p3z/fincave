@@ -11,7 +11,7 @@
     };
 
     var server = module.exports = new Hapi.Server(
-        process.env.HOST || 'localhost',
+        process.env.HOST,
         process.env.PORT || '8080',
         options || {}
     );
