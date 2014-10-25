@@ -20,6 +20,26 @@
         options || {}
     );
 
+    var dbObj = {
+        url: process.env.MONGO_URI || 'mongodb://localhost/fincave',
+        options: {
+            db: {
+                native_parser: true
+            }
+        }
+    };
+
+    var registerObj = {
+        plugin: require('hapi-mongodb'),
+        options: dbObj
+    };
+
+    server.pack.register(registerObj, function (err) {
+        if (err) {
+            throw new Error(err);
+        }
+    });
+
     server.pack.register(require('good'), function (err) {
         if (err) {
             throw new Error(err);
