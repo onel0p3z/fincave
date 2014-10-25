@@ -3,14 +3,14 @@
 (function () {
     var Hapi = require('hapi');
     var routes = require('./routes/');
+    var path = require('path');
 
     var options = {
         views: {
-            engines: { jade: require('jade') },
-            path: __dirname + '/templates',
-            compileOptions: {
-                pretty: true
-            }
+            engines: {
+                html: require('swig')
+            },
+            path: path.join(__dirname,  '/templates')
         }
     };
 
@@ -20,30 +20,29 @@
         options || {}
     );
 
-    var dbObj = {
-        url: process.env.MONGO_URI || 'mongodb://localhost/fincave',
+    var mongodb_config = {
+        plugin: require('hapi-mongodb'),
         options: {
-            db: {
-                native_parser: true
+            url: process.env.MONGO_URI || 'mongodb://localhost/fincave',
+            options: {
+                db: {
+                    native_parser: true
+                }
             }
         }
     };
 
-    var registerObj = {
-        plugin: require('hapi-mongodb'),
-        options: dbObj
+    var good_config = {
+        subscribers: {
+            console: ['ops', 'request', 'log', 'error']
+        }
     };
 
-    server.pack.register(registerObj, function (err) {
-        if (err) {
-            throw new Error(err);
-        }
-    });
-
-    server.pack.register(require('good'), function (err) {
-        if (err) {
-            throw new Error(err);
-        }
+    server.pack.register([
+        mongodb_config,
+        good_config
+        ], function (err) {
+            if (err) { throw new Error(err); }
     });
 
     server.route(routes);
