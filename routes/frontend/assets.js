@@ -4,10 +4,12 @@
 
     module.exports = {
         method: 'GET',
-        path: '/{assets*}/{file*}',
-        hanlder: {
+        path: '/assets/{path*}',
+        handler: {
             directory: {
-                path: 'public'
+                path: 'public',
+                listing: false,
+                index: false
             }
         }
     };

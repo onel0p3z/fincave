@@ -9,139 +9,139 @@
     }
 
     .nivo-prevNav:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -53px -62px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -53px -62px;
     }
 
     .nivo-nextNav:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -75px -62px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -75px -62px;
     }
 
     .fs_share_close {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat 0 -74px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat 0 -74px;
     }
 
     .fs_controls a.fs_share {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -76px -35px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -76px -35px;
     }
 
     .fs_pause {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -45px -11px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -45px -11px;
     }
 
     .fs_play {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -64px -11px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -64px -11px;
     }
 
     .fs_slider_prev {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -25px -11px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -25px -11px;
     }
 
     .fs_slider_next {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -83px -11px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -83px -11px;
     }
 
     header .header_toggler {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat 0 0;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat 0 0;
     }
 
     .pagline_toggler {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -51px -34px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -51px -34px;
     }
 
     .pagline_toggler.show-pag {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -26px -35px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -26px -35px;
     }
 
     .socials_list li a.ico_social_facebook:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -97px -84px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -97px -84px;
     }
 
     .socials_list li a.ico_social_pinterest:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -40px -102px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -40px -102px;
     }
 
     .socials_list li a.ico_social_twitter:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -58px -102px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -58px -102px;
     }
 
     .socials_list li a.ico_social_instagram:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -76px -102px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -76px -102px;
     }
 
     .socials_list li a.ico_social_tumblr:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -94px -102px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -94px -102px;
     }
 
     .socials_list li a.ico_social_flickr:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -112px -102px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -112px -102px;
     }
 
     .socials_list li a.ico_social_youtube:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat 0 -120px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat 0 -120px;
     }
 
     .socials_list li a.ico_social_dribbble:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -18px -120px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -18px -120px;
     }
 
     .socials_list li a.ico_social_gplus:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -36px -120px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -36px -120px;
     }
 
     .socials_list li a.ico_social_vimeo:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -54px -120px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -54px -120px;
     }
 
     .socials_list li a.ico_social_delicious:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -72px -120px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -72px -120px;
     }
 
     .socials_list li a.ico_social_linked:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -90px -120px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -90px -120px;
     }
 
     .socials_list li a.ico_social_500px:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -108px -120px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -108px -120px;
     }
 
     .shortcode_messagebox .box_close {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -24px 0;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -24px 0;
     }
 
     .featured_items .img_block .featured_link_ico {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat 0 -24px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat 0 -24px;
     }
 
     .featured_ico_link {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat 0 -24px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat 0 -24px;
     }
 
     .featured_ico_zoom {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat 0 -49px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat 0 -49px;
     }
 
     .beforeAfter_wrapper .result_line:before {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -26px -60px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -26px -60px;
     }
 
     .port_left a {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -105px 0;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -105px 0;
     }
 
     .port_right a {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -105px -40px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -105px -40px;
     }
 
     .port_close {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat 0 -74px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat 0 -74px;
     }
 
     .fs-port-slider-wrapper .fs_prev-post {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -105px 0;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -105px 0;
     }
 
     .fs-port-slider-wrapper .fs_next-post {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat -105px -54px;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat -105px -54px;
     }
 
     .nivo-prevNav:before,
@@ -182,7 +182,7 @@
     }
 
     .fs_share_close {
-        background: url(../img/eclipse-sprites.png) no-repeat 0 -37px !important;
+        background: url(/assets/img/eclipse-sprites.png) no-repeat 0 -37px !important;
         background-size: 65px 69px !important;
         width: 20px !important;
         height: 20px !important;
@@ -212,15 +212,15 @@
     }
 
     .port_left a {
-        background: url(../img/eclipse-sprites.png) no-repeat -52px 0;
+        background: url(/assets/img/eclipse-sprites.png) no-repeat -52px 0;
     }
 
     .port_right a {
-        background: url(../img/eclipse-sprites.png) no-repeat -52px -20px;
+        background: url(/assets/img/eclipse-sprites.png) no-repeat -52px -20px;
     }
 
     .port_close {
-        background: url(../img/eclipse-sprites.png) no-repeat 0 -37px;
+        background: url(/assets/img/eclipse-sprites.png) no-repeat 0 -37px;
         background-size: 65px 69px;
     }
 
@@ -837,7 +837,7 @@
     }
 
     header.main_header .menu_toggler {
-        background: url(../img/eclipse-sprites.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: url(/assets/img/eclipse-sprites.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
         display: block;
         height: 24px;
         right: 10px;
@@ -1160,7 +1160,7 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
     header.main_header .menu_toggler {
-        background: url(../img/retina/eclipse-sprites.png) no-repeat;
+        background: url(/assets/img/retina/eclipse-sprites.png) no-repeat;
         background-size: 130px 138px;
     }
 }
