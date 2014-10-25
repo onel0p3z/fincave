@@ -3,12 +3,17 @@
 (function () {
     var Hapi = require('hapi');
     var routes = require('./routes/');
-
+    var path = require('path');
+    var options = {
+        files: {
+            relativeTo: path.join(__dirname, 'public')
+        }
+    };
 
     var server = module.exports = new Hapi.Server(
-        process.env.HOST,
-        process.env.PORT,
-        process.env.APP_OPTS || {}
+        process.env.HOST || 'localhost',
+        process.env.PORT || '8080',
+        options || {}
     );
 
     server.pack.register(require('good'), function (err) {
