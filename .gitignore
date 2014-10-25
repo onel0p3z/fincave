@@ -69,4 +69,4 @@ vendor
 build
 temp
 #theme
-common/config.js
+.env
