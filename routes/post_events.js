@@ -6,8 +6,10 @@
     function postEventHandler(request, reply) {
         var db = request.server.plugins['hapi-mongodb'].db;
         var response = {};
-        db.collection('events').insert(request.payload, function(error, data) {
+        console.log('Request:', request.payload);
+        db.collection('events').insert(JSON.parse(request.payload), function(error, data) {
             if(error) {
+                console.log(error);
                 response = Hapi.error.internal('error in database', error);
             } else {
                 response = data;
