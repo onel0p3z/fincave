@@ -7,11 +7,13 @@
         var db = request.server.plugins['hapi-mongodb'].db;
 
         try {
-            incoming = JSON.parse(request.payload);
-            console.log('INCOMING', incoming);
+            incoming = request.payload;
+            console.log('INCOMING', JSON.stringify(incoming));
         } catch (e) {
             console.error(e);
         }
+
+        console.log('saving incoming entry', incoming);
 
         db.collection('entries').insert(incoming, function (err, result) {
             if (err) {
