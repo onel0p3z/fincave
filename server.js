@@ -36,24 +36,22 @@
 
     var good_config = {
         plugins: require('good'),
-        options : {
+        options: {
             subscribers: {
                 console: ['ops', 'request', 'log', 'error']
             }
         }
     };
 
-    server.pack.register(
-        mongodb_config
-        , function (err) {
-            if (err) { throw new Error(err); }
+    server.pack.register(mongodb_config, function (err) {
+        if (err) { throw new Error(err); }
     });
 
-/*
+    /*
     server.pack.register(good_config, function (err) {
         if (err) { throw new Error(err); }
     });
-*/
+    */
 
     server.route(routes);
 
