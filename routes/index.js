@@ -3,6 +3,7 @@
 (function() {
     var get_instagram = require('./get_instagram');
     var post_instagram = require('./post_instagram');
+    var post_events = require('./post_events');
 
 
     // frontend routes
@@ -15,6 +16,7 @@
         get_home,
         get_event,
         get_instagram,
-        post_instagram
+        post_instagram,
+        post_events
     ];
 })();

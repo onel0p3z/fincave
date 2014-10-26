@@ -53,9 +53,9 @@ section.socials li a:hover:before {
 }
 
 /* Selection background */
-::selection {background:#105779;
+::selection {background:#00656a;
 }
-::-moz-selection {background:#105779;
+::-moz-selection {background:#00656a;
 }
 
 .highlighted_colored,
@@ -74,7 +74,7 @@ input[type="submit"],
 .strip-fadder,
 .main_header .sub-menu,
 .menu-top .sub-menu li {
-	background-color:#105779;
+	background-color:#00656a;
 }
 a:hover,
 .dropcap.type2,
@@ -89,7 +89,7 @@ a.blogpost_title:hover,
 .contact_info_wrapper a:hover,
 .sidepanel a:hover,
 .widget_posts .post_title:hover {
-	color:#105779;
+	color:#00656a;
 }
 .shortcode_iconbox > a:hover .iconbox_body,
 .shortcode_iconbox > a:hover .iconbox_body p,
@@ -97,7 +97,7 @@ a.blogpost_title:hover,
 .shortcode_iconbox > a:hover .ico i,
 .pagerblock li a:hover,
 .count_ico:hover i {
-	color:#105779!important;
+	color:#00656a!important;
 }
 blockquote.shortcode_blockquote.type2 .blockquote_wrapper,
 .promoblock_wrapper,
@@ -105,7 +105,7 @@ blockquote.shortcode_blockquote.type2 .blockquote_wrapper,
 .testimonial_item_wrapper .testimonials_photo,
 .blogpost_user_meta,
 .commentlist .stand_comment {
-	border-color:#105779!important;
+	border-color:#00656a!important;
 }
 .menu-left.short_header .menu > li > a > span:before {
 	border-right-color:rgba(109,133,131,0.85)!important;
@@ -119,7 +119,7 @@ blockquote.shortcode_blockquote.type2 .blockquote_wrapper,
 	background-color:rgba(109,133,131,0.4);
 }
 .jspDrag {
-	background:#105779!important;
+	background:#00656a!important;
 }
 
 /* Typography */
@@ -203,7 +203,7 @@ section.copyright,
 	-webkit-font-smoothing:antialiased;
 }
 .contentarea .ngg-tagcloud .wp-tag-cloud li a:hover {
-	background:#105779 !important;
+	background:#00656a !important;
 	color:#fff !important;
 }
 .grid-port-item .grid-port-fadder,
@@ -225,4 +225,20 @@ section.copyright,
 	.strip_template figure section .strip-fadder {
 		background-color:rgba(109,133,131,0.85);
 	}
+}
+
+
+
+.blog_post_page h2 {
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: 'Patua One', cursive;
+	color: #00656a;
+}
+/* Countdown */
+
+#countdown {
+	padding: 3em 0 5em;
+	background-color: #f3652f;
+	text-align: center;
 }
