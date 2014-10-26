@@ -62,5 +62,6 @@
         console.log(new Date().toISOString());
         console.log('/****************/');
         console.log('Server running at:', server.info.uri);
+        require('./scripts/twitter_stream');
     });
 })();

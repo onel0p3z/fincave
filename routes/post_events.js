@@ -14,7 +14,6 @@
             } else {
                 response = data;
             }
-
             return reply(response);
         });
     }
