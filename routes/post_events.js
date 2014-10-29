@@ -1,6 +1,6 @@
-'use strict';
-
 (function() {
+    'use strict';
+
     var Hapi = require('hapi');
 
     function postEventHandler(request, reply) {

@@ -1,6 +1,5 @@
-'use strict';
-
 (function() {
+    'use strict';
 
     module.exports = {
         method: 'GET',

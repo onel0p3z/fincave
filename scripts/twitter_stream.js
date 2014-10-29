@@ -1,17 +1,19 @@
-'use strict';
-
 (function() {
-	var io = require('socket.io').listen(3000);
-	io.set('transports', ["websocket", "polling"]);
-	
+    'use strict';
+
+    var config = require('../config');
+    var io = require('socket.io').listen(config.socketio_port);
+
+	io.set('transports', ['websocket', 'polling']);
+
     var Twit = require('twit');
     var T = new Twit({
-        consumer_key:           process.env.TWITTER_CONSUMER_KEY,
-        consumer_secret:        process.env.TWITTER_CONSUMER_SECRET,
-        access_token:           process.env.TWITTER_ACCESS_TOKEN,
-        access_token_secret:    process.env.TWITTER_ACCESS_TOKEN_SECRET
+        consumer_key:           config.twitter_consumer_key,
+        consumer_secret:        config.twitter_consumer_secret,
+        access_token:           config.twitter_access_token,
+        access_token_secret:    config.twitter_access_token_secret
     });
-	
+
 	var stream = {};
 
     var contest = {
@@ -27,7 +29,7 @@
 	io.on('connection', function (socket) {
 		io.emit('this', { will: 'be received by everyone'});
 		console.log('socket server started.');
-		
+
 		stream = T.stream('statuses/filter', { track: contest.hashtags, language: 'en' });
 	    stream.on('tweet', function(tweet) {
 	        console.log('streaming received for', contest.name);
@@ -50,5 +52,6 @@
 			io.sockets.emit('user disconnected');
 		});
 	});
-	
+
 })();
+

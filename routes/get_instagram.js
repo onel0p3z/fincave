@@ -1,6 +1,6 @@
-'use strict';
-
 (function() {
+    'use strict';
+
     function getInstagramUsersHandler (request, reply) {
         console.log('PAYLOAD', request.query);
 

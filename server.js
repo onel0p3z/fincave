@@ -1,9 +1,15 @@
-'use strict';
-
 (function () {
+    'use strict';
+
     var Hapi = require('hapi');
     var routes = require('./routes/');
     var path = require('path');
+    var config = require('./config');
+    var inspect = require('util').inspect;
+    var insobj = { depth: 10, colors: true };
+    //var SocketIO = require('socket.io');
+
+    console.log(inspect(config, insobj));
 
     var options = {
         views: {
@@ -14,10 +20,9 @@
         }
     };
 
-
     var server = module.exports = new Hapi.Server(
-        process.env.HOST || 'localhost',
-        process.env.PORT || '8080'
+        config.host || 'localhost',
+        config.port || '8080'
     );
 
     server.views(options.views);
@@ -25,20 +30,11 @@
     var mongodb_config = {
         plugin: require('hapi-mongodb'),
         options: {
-            url: process.env.MONGO_URI || 'mongodb://localhost/fincave',
+            url: config.mongo_uri || 'mongodb://localhost/fincave',
             options: {
                 db: {
                     native_parser: true
                 }
-            }
-        }
-    };
-
-    var good_config = {
-        plugins: require('good'),
-        options: {
-            subscribers: {
-                console: ['ops', 'request', 'log', 'error']
             }
         }
     };
@@ -48,6 +44,15 @@
     });
 
     /*
+    var good_config = {
+        plugins: require('good'),
+        options: {
+            subscribers: {
+                console: ['ops', 'request', 'log', 'error']
+            }
+        }
+    };
+
     server.pack.register(good_config, function (err) {
         if (err) { throw new Error(err); }
     });
@@ -56,10 +61,13 @@
     server.route(routes);
 
     server.start(function(){
-        console.log('/****************/');
-        console.log(new Date().toISOString());
-        console.log('/****************/');
-        console.log('Server running at:', server.info.uri);
+        console.log(
+            '['+new Date().toISOString()+'] Server running at:',
+            server.info.uri
+        );
+        //var io = SocketIO.listen(server.listener);
+
 		require('./scripts/twitter_stream');
     });
 })();
+

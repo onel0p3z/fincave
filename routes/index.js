@@ -1,6 +1,6 @@
-'use strict';
-
 (function() {
+    'use strict';
+
     var get_instagram = require('./get_instagram');
     var post_instagram = require('./post_instagram');
     var post_events = require('./post_events');
@@ -13,10 +13,10 @@
 
     module.exports = [
         get_assets,
-        get_home,
         get_event,
+        get_home,
         get_instagram,
-        post_instagram,
-        post_events
+        post_events,
+        post_instagram
     ];
 })();

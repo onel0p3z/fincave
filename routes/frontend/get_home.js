@@ -1,5 +1,5 @@
-'use strict';
 (function() {
+    'use strict';
 
     function getHomeHandler (request, reply) {
         reply.view('home', {

@@ -1,7 +1,8 @@
-'use strict';
-
 (function() {
+    'use strict';
+
     module.exports = function (db) {
+        var config = require('../config');
         var async = require('async');
         var io = require('socket.io')(8080);
         var ig = require('instagram-node').instagram();
@@ -9,8 +10,8 @@
         var insobj = { depth: 10, colors: true };
 
         ig.use({
-            client_id: process.env.INSTAGRAM_CLIENT_ID,
-            client_secret: process.env.INSTAGRAM_CLIENT_SECRET
+            client_id: config.instagram_client_id,
+            client_secret: config.instagram_client_secret
         });
 
         ig.tag_media_recent('fintank', function(err, medias, pagination, remaining, limit) {
@@ -54,7 +55,7 @@
                             max_tag_id: pagination.max_tag_id,
                             dlu: (new Date()).getTime()
                         }
-                    };
+                    //};
 
                     db.collection('entries').update(updates, function (err, result) {
                         if (err) {
@@ -64,6 +65,10 @@
                         callback(null, result);
                     });
                     */
+                },
+                emitting_to_socketio: function (callback) {
+                    console.log('emitting to socket.io');
+                    callback(null, 'emitted everything dawg !!');
                 }
             }, function (err, results) {
                 // show results
@@ -76,3 +81,4 @@
         });
     };
 })();
+

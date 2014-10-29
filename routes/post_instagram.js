@@ -1,8 +1,7 @@
-'use strict';
-
 (function() {
+    'use strict';
+
     function postInstragramUsersHandler (request, reply) {
-        //var Hapi = require('hapi');
         var incoming;
         var db = request.server.plugins['hapi-mongodb'].db;
         var instagram = require('../scripts/instagram_stream.js');
@@ -21,16 +20,8 @@
             message: 'Thank you :D'
         });
 
+        console.log('starting instagram processing');
         instagram(db);
-
-        /*
-        db.collection('entries').insert(incoming, function (err, result) {
-            if (err) {
-                console.error('SAVING_EVENT_ERROR', err);
-            }
-            console.log('RESULT', result);
-        });
-        */
     }
 
     module.exports = {

@@ -1,5 +1,5 @@
-'use strict';
 (function() {
+    'use strict';
 
 	function getEventHandler (request, reply) {
 		reply.view('event', {
